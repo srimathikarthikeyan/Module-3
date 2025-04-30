@@ -1,30 +1,36 @@
 # Exp.No:3a
-## STRING - FIND AND REPLACE
+## STRING - CHECK PALINDROME
 
 ---
 
 ### AIM  
-To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
+To write a python program to check whether an entered string is a palindrome or not without using built-in functions Available in Python
 
 ---
 
 ### ALGORITHM
 
 1. Begin the program.  
-2. Input the original string `str1` and the word to be replaced `replace_str`.  
-3. Ask the user to input the new replacement word `str2`.  
-4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
-5. Store the modified string in `str3`.  
-6. Display the original string (`str1`) and the modified string (`str3`).  
-7. Terminate the program.
+2. Input the string from the user and store it in a variable string.
+3. Check if the string is equal to its reverse (using slicing [::-1]).
+4. If the string is equal to its reverse, print "The entered string is palindrome".
+5. If the string is not equal to its reverse, print "The entered string is not palindrome".
+6. Terminate the program.
 
 ---
 
 ### PROGRAM
 
-```
-```
+    string = input()
+    if (string[::] == string[::-1]):
+        print("The entered string is palindrome")
+    else:
+        print("The entered string is not palindrome")
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/799bc976-e6e6-4c45-a48f-9e0a1bb2f80a)
+
+
 ### RESULT
+Thus, the python program to check palindrome string is implemented and executed successfully.
